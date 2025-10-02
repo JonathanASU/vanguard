@@ -1,7 +1,9 @@
-/* CSS BY YOUR NAME */
+/* --------------CSS by Jonathan Newkirk----------------- */
 
-/* IMPORTED FONTS*/
-/* IMPORT "INTER" FROM GOOGLE FONTS"
+/* IMPORTED FONTS */
+/* Import "Inter" from Google Fonts - include common weights and italics */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,400;1,700&display=swap');
 
 /* CSS RESET */
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -35,6 +37,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    font-family: var(--font);
 }
 ol, ul {
     list-style: none;
