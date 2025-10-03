@@ -209,6 +209,25 @@ p{
     
 }
 
+th{
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid var(--charcoal);
+}
+
+td{
+    background-color: var(--White);
+    padding: 20px;
+    text-align: center;
+    border: 2px solid var(--charcoal);
+}
+
+tr:nth-child(even) {
+  background-color: var(--charcoal);
+}
+
+
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
@@ -221,6 +240,7 @@ p{
     max-width: 800px;
     padding: 1rem;
     position: relative;
+    margin:auto;
 }
 
 #contact-us{
@@ -309,6 +329,7 @@ footer a{
 
 /* MEDIA QUERIES (MEDIUM) */ 
 
+@media (min-width: 768px) {
     #results {
         grid-template-columns: 1fr 1fr;
     }
@@ -322,6 +343,7 @@ footer a{
     .bar-chart {
         width: 50%;
     }
+}
 
 
 /* MEDIA QUERIES (LARGE) */
