@@ -83,22 +83,67 @@ body {
     "footer";
 }
 
-
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: var(--black);
     color: var(--white);
-    padding: 1rem 0;
+    padding: 2rem;
+    box-shadow: #007BFF 0px 10px 20px;
+    z-index: 1;
 }
 
 header h1{
     color: var(--blue);
     font-weight: bold;
-    margin-left: 80px;
+    margin-left: 4.5rem;
     margin-bottom: 5px;
     font-size: 1.5rem;
+}
+
+.hamburger-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.hamburger-menu span{
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: var(--white);
+  border-radius: 2px;
+}
+
+.nav-links{
+  display: none;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: grid;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+h3{
+    font-size: 1rem;
+    font-weight: bold;
+    display: grid;
+    padding: 1rem;
+    margin: 1rem 0 0 0;
+}
+
+p{
+    font-size: .75rem;
+    line-height: 1.5;
+    padding: 0 1rem 1rem 1rem;
+    color: var(--dark-charcoal);
 }
 
 
@@ -126,9 +171,44 @@ header h1{
     width: 3.75rem;
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
-    margin-left: 10px;
-
 }
+
+#innovation-investment-section h2{
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#innovation-investment-section p{
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 1.5rem 1rem;
+}
+
+.blue-card{
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: .5rem;
+    margin: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#results{
+    background-color: var(--blue);
+    color: var(--white);
+    padding-bottom: 2rem;
+}
+
+#profits-table{
+    width: 100%;
+    background-color: var(--black);
+    margin: 1rem 0;
+    color:var(--white)
+    
+}
+
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
@@ -142,6 +222,55 @@ header h1{
     padding: 1rem;
     position: relative;
 }
+
+#contact-us{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: .75rem;
+    gap: 5px;
+}
+
+form textarea, form input{
+    padding: 1rem;
+    border: 2px solid var(--blue);
+    border-radius: .25rem;
+    font-family: var(--font), sans-serif;
+    font-size: .75rem;
+    margin-bottom: .5rem;
+}
+
+button{
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 2rem 0rem;
+    max-width: 600px;
+}
+
+footer{
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    font-size: .75rem;
+}
+
+footer a{
+    color: var(--white);
+    text-decoration: none;
+}
+
 /* ADD ON TRANSITION ON HEIGHT */
 .bar {
     width: 50px;
@@ -151,6 +280,7 @@ header h1{
     transition: ;
     height: 0;
 }
+
 /* THIS ONE IS DONE FOR YOU */
 .bar::after {
     content: attr(data-year);
@@ -170,6 +300,7 @@ header h1{
         height: var(--height);
     }
 }
+
 /* ADD ANIMATION ON stepUp for 1s ease-in-out forwards */
 .bar {
     animation: stepUp 1s ease-in-out forwards;
