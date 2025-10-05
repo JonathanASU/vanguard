@@ -142,8 +142,7 @@ h3{
 p{
     font-size: .75rem;
     line-height: 1.5;
-    padding: 0 1rem 1rem 1rem;
-    color: var(--dark-charcoal);
+    padding: 0 1rem 1rem 1rem;;
 }
 
 
@@ -297,9 +296,10 @@ footer a{
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
-    height: 0;
+    height: 20%;
+    transition: height 1s ease-in-out;
 }
+
 
 /* THIS ONE IS DONE FOR YOU */
 .bar::after {
@@ -312,6 +312,7 @@ footer a{
     font-weight: bold;
     color: var(--white);
 }
+
 @keyframes stepUp {
     0% {
         height: 0;
@@ -327,23 +328,81 @@ footer a{
 }
 
 
-/* MEDIA QUERIES (MEDIUM) */ 
-
+/* ===== MEDIA QUERIES (MEDIUM) ===== */
 @media (min-width: 768px) {
+
     #results {
+        display: grid;
         grid-template-columns: 1fr 1fr;
+        align-items: start;
+        gap: 2rem;
+        padding: 2rem;
     }
-    .results-container {
-        flex-direction: row;
-        justify-content: space-between;
+
+    #profits-table {
+        width: 90%;
+        margin: auto;
     }
-    .results-table {
-        width: 50%;
+
+    #bar-chart {
+        width: 80%;
+        margin: auto;
     }
-    .bar-chart {
-        width: 50%;
+
+    /* Make blue cards display in two columns */
+    #services .blue-card {
+        width: 45%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #services {
+        text-align: center;
     }
 }
 
 
-/* MEDIA QUERIES (LARGE) */
+/* ===== MEDIA QUERIES (LARGE) ===== */
+@media (min-width: 1024px) {
+
+   #results {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    header {
+        padding: 3rem 6rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #innovation-investment-section h2 {
+        font-size: 2.5rem;
+    }
+
+    #services .blue-card {
+        width: 30%;
+        display: inline-block;
+        margin: 1rem;
+    }
+
+    #results {
+        grid-template-columns: 1fr 1fr;
+        max-width: auto;
+        margin: 0 auto;
+    }
+
+    #bar-chart {
+        max-width: 1024px;
+    }
+
+    form {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: auto;
+        margin: 0 auto;
+}
