@@ -365,10 +365,11 @@ footer a{
 /* ===== MEDIA QUERIES (LARGE) ===== */
 @media (min-width: 1024px) {
 
-   #results {
+   #growth-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        align-items: start;
+        max-width: 100%;
+        align-items: center;
         gap: 2rem;
         padding: 2rem;
     }
@@ -402,7 +403,7 @@ footer a{
     }
 
     form {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         max-width: auto;
         margin: 0 auto;
 }
