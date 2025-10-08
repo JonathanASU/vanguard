@@ -235,7 +235,7 @@ tr:nth-child(even) {
     justify-content: space-around;
     gap: 1rem;
     height: 300px;
-    width: 100%;
+    width: 80%;
     max-width: 800px;
     padding: 1rem;
     position: relative;
@@ -290,6 +290,7 @@ footer a{
     text-decoration: none;
 }
 
+
 /* ADD ON TRANSITION ON HEIGHT */
 .bar {
     width: 50px;
@@ -331,12 +332,24 @@ footer a{
 /* ===== MEDIA QUERIES (MEDIUM) ===== */
 @media (min-width: 768px) {
 
-    #results {
+
+    #growth-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        align-items: start;
+        align-items: center;
+        justify-content: center;
         gap: 2rem;
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #results {
         padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
     }
 
     #profits-table {
@@ -345,7 +358,8 @@ footer a{
     }
 
     #bar-chart {
-        width: 80%;
+        max-width: 800px;
+        width: 100%;
         margin: auto;
     }
 
@@ -356,9 +370,6 @@ footer a{
         vertical-align: top;
     }
 
-    #services {
-        text-align: center;
-    }
 }
 
 
@@ -386,6 +397,11 @@ footer a{
         font-size: 2.5rem;
     }
 
+    #services p h2{
+        text-align: center;
+    }
+
+
     #services .blue-card {
         width: 30%;
         display: inline-block;
@@ -393,17 +409,24 @@ footer a{
     }
 
     #results {
+        display: flex;
         grid-template-columns: 1fr 1fr;
         max-width: auto;
-        margin: 0 auto;
+        margin: auto;
+        justify-content: center;
+        text-align: left;
     }
 
     #bar-chart {
         max-width: 1024px;
+        width: 100%;
+        margin: auto;
     }
 
     form {
+        display: grid;
         grid-template-columns: 1fr 1fr;
         max-width: auto;
         margin: 0 auto;
+    }
 }
