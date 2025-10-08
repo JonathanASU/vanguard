@@ -247,10 +247,10 @@ tr:nth-child(even) {
     color: var(--white);
 }
 
-form{
+.col-1 .col-2{
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 100%;
     margin: 0 auto;
     font-size: .75rem;
     gap: 5px;
@@ -426,7 +426,12 @@ footer a{
     form {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        max-width: auto;
+        max-width: 1000px;
+        justify-content: center;
         margin: 0 auto;
+        align-items: start;
+        gap: 1rem 2rem;
     }
+
+
 }
