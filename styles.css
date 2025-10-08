@@ -247,34 +247,50 @@ tr:nth-child(even) {
     color: var(--white);
 }
 
-.col-1 .col-2{
+form{
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    max-width: 600px;
     margin: 0 auto;
     font-size: .75rem;
     gap: 5px;
 }
 
-form textarea, form input{
-    padding: 1rem;
-    border: 2px solid var(--blue);
-    border-radius: .25rem;
-    font-family: var(--font), sans-serif;
-    font-size: .75rem;
-    margin-bottom: .5rem;
+form input,
+form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid var(--blue);
+  border-radius: 0.25rem;
+  font-family: var(--font);
+  font-size: 1rem;
+  box-sizing: border-box;
 }
 
-button{
-    background-color: var(--blue);
-    color: var(--white);
-    border: none;
-    border-radius: .5rem;
-    padding: .75rem 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    margin: 2rem 0rem;
-    max-width: 600px;
+form button {
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+button {
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 300px;
 }
 
 footer{
@@ -432,6 +448,7 @@ footer a{
         align-items: start;
         gap: 1rem 2rem;
     }
+
 
 
 }
