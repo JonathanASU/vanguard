@@ -346,6 +346,9 @@ footer a{
 /* ===== MEDIA QUERIES (MEDIUM) ===== */
 @media (min-width: 768px) {
 
+    h2{
+        margin-top: 1rem;
+    }
 
     #growth-section {
         display: grid;
@@ -393,6 +396,10 @@ footer a{
 
 /* ===== MEDIA QUERIES (LARGE) ===== */
 @media (min-width: 1024px) {
+
+  h2{
+        margin-top: 1rem;
+    }
 
    #growth-section {
         display: grid;
