@@ -145,7 +145,6 @@ p{
     padding: 0 1rem 1rem 1rem;;
 }
 
-
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
     width: 90%;
@@ -225,7 +224,6 @@ td{
 tr:nth-child(even) {
   background-color: var(--charcoal);
 }
-
 
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
@@ -386,6 +384,10 @@ footer a{
         vertical-align: top;
     }
 
+    #contact-us{
+    padding-top: 2rem;
+}
+
 }
 
 
@@ -449,6 +451,8 @@ footer a{
         gap: 1rem 2rem;
     }
 
-
+    #contact-us{
+    padding-top: 2rem;
+}
 
 }
